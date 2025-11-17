@@ -281,15 +281,172 @@ main {
     text-decoration: underline;
 }
 
+/* Data Tables */
+.table-container {
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--background);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.data-table thead {
+    background-color: var(--background-light);
+}
+
+.data-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--primary-dark);
+    border-bottom: 2px solid var(--border-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.data-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+    background-color: var(--hover-bg);
+}
+
+.data-table a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.data-table a:hover {
+    text-decoration: underline;
+}
+
+/* School status styles */
+.school-active,
+.school-no-deadline {
+    background-color: rgba(74, 144, 226, 0.04);
+    border-left: 3px solid var(--accent-blue);
+}
+
+.school-deadline-passed {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.school-deadline-passed td {
+    color: var(--text-light);
+}
+
+.school-deadline-passed a {
+    color: var(--text-light);
+}
+
+.school-finished {
+    opacity: 0.4;
+}
+
+.deadline-active,
+.deadline-none {
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
+.deadline-passed-text {
+    color: var(--text-light);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.deadline-finished {
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.loading, .no-data, .error {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.error {
+    color: var(--accent-color);
+}
+
+/* Acknowledgment section */
+.acknowledgment {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.acknowledgment h3 {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.acknowledgment p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.acknowledgment a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+.acknowledgment a:hover {
+    text-decoration: underline;
+}
+
+/* New badge for recently added schools */
+.new-badge {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+}
+
 /* Footer */
 footer {
     background-color: var(--background-light);
-    color: var(--text-light);
+    color: var(--text-color);
     text-align: center;
     padding: 2.5rem 0;
     margin-top: 4rem;
     border-top: 1px solid var(--border-color);
     font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.6;
 }
 
 /* Responsive Design */
@@ -319,5 +476,18 @@ footer {
 
     .page-header h1 {
         font-size: 1.8rem;
+    }
+
+    .data-table {
+        font-size: 0.85rem;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .data-table th {
+        font-size: 0.8rem;
     }
 }

@@ -29,9 +29,24 @@
 
     <main class="container">
         <section class="content-section">
-            <h2>Coming Soon</h2>
-            <p>This page will serve as a comprehensive listing of summer and winter schools in theoretical computer science, including application deadlines, locations, and program details.</p>
-            <p>Summer and winter schools provide excellent opportunities for in-depth learning, networking with peers and experts, and exploring advanced topics in TCS.</p>
+            <div class="table-container">
+                <table id="schools-table" class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Place</th>
+                            <th>Dates</th>
+                            <th>Deadline</th>
+                            <th>Time Until Deadline</th>
+                        </tr>
+                    </thead>
+                    <tbody id="schools-tbody">
+                        <tr>
+                            <td colspan="5" class="loading">Loading schools data...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
 
@@ -41,5 +56,6 @@
         </div>
     </footer>
     <script src="../js/script.js"></script>
+    <script src="../js/schools.js"></script>
 </body>
 </html>
