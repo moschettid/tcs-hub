@@ -433,6 +433,63 @@ main {
     letter-spacing: 0.5px;
 }
 
+/* Collapsible Sections */
+.collapsible-section {
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--background);
+    overflow: hidden;
+}
+
+.section-title {
+    cursor: pointer;
+    padding: 1.4rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    background: var(--background-light);
+    user-select: none;
+    transition: all 0.2s ease;
+    list-style: none;
+    letter-spacing: -0.3px;
+    position: relative;
+}
+
+/* Hide the arrow by default */
+.section-title::after {
+    content: '▼';
+    position: absolute;
+    right: 2rem;
+    opacity: 0;
+    transition: all 0.2s ease;
+    font-size: 1.2rem;
+    color: var(--accent-blue);
+}
+
+/* Show arrow on hover */
+.section-title:hover::after {
+    opacity: 1;
+}
+
+/* Rotate arrow when open */
+details[open] .section-title::after {
+    transform: rotate(-180deg);
+}
+
+.section-title:hover {
+    background-color: var(--hover-bg);
+}
+
+.collapsible-section .resource-list {
+    padding: 2rem;
+    margin: 0;
+}
+
+.collapsible-section .resource-item:last-child {
+    margin-bottom: 0;
+}
+
 /* Footer */
 footer {
     background-color: var(--background-light);

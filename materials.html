@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materials - TCS Hub</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=2">
 </head>
 <body>
     <div id="header"></div>
@@ -17,16 +17,181 @@
     </div>
 
     <main class="container">
-        <section class="content-section">
-            <h2>Coming Soon</h2>
-            <p>This page will serve as a hub for theoretical computer science materials including textbooks, lecture notes, video lectures, and online courses.</p>
-            <p>In the meantime, you can find a comprehensive collection of TCS resources at:</p>
-            <div class="resource-item">
-                <h3>Awesome Theoretical Computer Science</h3>
-                <p>A curated list of theoretical computer science resources maintained by the community.</p>
-                <a href="https://github.com/mostafatouny/awesome-theoretical-computer-science" target="_blank">Visit Repository →</a>
-            </div>
+        <section class="content-section acknowledgment">
+            <h3>Acknowledgment</h3>
+            <p>This page compiles resources from the <a href="https://github.com/mostafatouny/awesome-theoretical-computer-science" target="_blank" rel="noopener noreferrer">Awesome Theoretical Computer Science</a> repository, curated and maintained by Mostafa Touny and the community.</p>
         </section>
+
+        <details class="collapsible-section">
+            <summary class="section-title">📚&nbsp;&nbsp;Introductory Resources</summary>
+            <ul class="resource-list">
+                <li class="resource-item">
+                    <h3>Introduction to Theoretical Computer Science</h3>
+                    <p><strong>Author:</strong> Boaz Barak</p>
+                    <p>A free online textbook covering the mathematical foundations of computer science.</p>
+                    <a href="https://introtcs.org/" target="_blank">View Resource →</a>
+                </li>
+                <li class="resource-item">
+                    <h3>Theory of Computation</h3>
+                    <p><strong>Author:</strong> Michael Sipser</p>
+                    <p>Classic textbook on automata theory, computability, and complexity theory.</p>
+                </li>
+            </ul>
+        </details>
+
+        <details class="collapsible-section">
+            <summary class="section-title">🔬&nbsp;&nbsp;Computational Complexity</summary>
+            <ul class="resource-list">
+                <li class="resource-item">
+                    <h3>Computational Complexity: A Modern Approach</h3>
+                    <p><strong>Authors:</strong> Sanjeev Arora & Boaz Barak</p>
+                    <p>Comprehensive graduate-level textbook on complexity theory.</p>
+                    <a href="https://theory.cs.princeton.edu/complexity/" target="_blank">View Resource →</a>
+                </li>
+                <li class="resource-item">
+                    <h3>The Nature of Computation</h3>
+                    <p><strong>Authors:</strong> Cristopher Moore & Stephan Mertens</p>
+                    <p>An accessible introduction to computational complexity and the P vs NP problem.</p>
+                </li>
+            </ul>
+        </details>
+
+        <details class="collapsible-section">
+            <summary class="section-title">🧮&nbsp;&nbsp;Algorithms</summary>
+            <ul class="resource-list">
+                <li class="resource-item">
+                    <h3>Introduction to Algorithms (CLRS)</h3>
+                    <p><strong>Authors:</strong> Cormen, Leiserson, Rivest, Stein</p>
+                    <p>The definitive textbook on algorithms and data structures.</p>
+                </li>
+                <li class="resource-item">
+                    <h3>Algorithm Design</h3>
+                    <p><strong>Authors:</strong> Jon Kleinberg & Éva Tardos</p>
+                    <p>Covers algorithm design techniques with real-world applications.</p>
+                </li>
+                <li class="resource-item">
+                    <h3>Algorithms</h3>
+                    <p><strong>Authors:</strong> Dasgupta, Papadimitriou, Vazirani</p>
+                    <p>Clear and accessible introduction to algorithms with emphasis on understanding.</p>
+                    <a href="http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf" target="_blank">View Resource →</a>
+                </li>
+            </ul>
+        </details>
+
+        <details class="collapsible-section">
+            <summary class="section-title">📊&nbsp;&nbsp;Randomized Algorithms</summary>
+            <ul class="resource-list">
+                <li class="resource-item">
+                    <h3>Randomized Algorithms</h3>
+                    <p><strong>Authors:</strong> Rajeev Motwani & Prabhakar Raghavan</p>
+                    <p>Comprehensive coverage of probabilistic algorithms and their analysis.</p>
+                </li>
+                <li class="resource-item">
+                    <h3>Probability and Computing</h3>
+                    <p><strong>Authors:</strong> Michael Mitzenmacher & Eli Upfal</p>
+                    <p>Randomized algorithms with focus on probabilistic techniques.</p>
+                </li>
+            </ul>
+        </details>
+
+        <details class="collapsible-section">
+            <summary class="section-title">🎯&nbsp;&nbsp;Approximation Algorithms</summary>
+            <ul class="resource-list">
+                <li class="resource-item">
+                    <h3>The Design of Approximation Algorithms</h3>
+                    <p><strong>Authors:</strong> David Williamson & David Shmoys</p>
+                    <p>Modern treatment of approximation algorithms for NP-hard problems.</p>
+                    <a href="http://www.designofapproxalgs.com/" target="_blank">View Resource →</a>
+                </li>
+            </ul>
+        </details>
+
+        <details class="collapsible-section">
+            <summary class="section-title">🔐&nbsp;&nbsp;Cryptography</summary>
+            <ul class="resource-list">
+                <li class="resource-item">
+                    <h3>Introduction to Modern Cryptography</h3>
+                    <p><strong>Authors:</strong> Jonathan Katz & Yehuda Lindell</p>
+                    <p>Rigorous treatment of cryptography with proofs of security.</p>
+                </li>
+                <li class="resource-item">
+                    <h3>A Graduate Course in Applied Cryptography</h3>
+                    <p><strong>Authors:</strong> Dan Boneh & Victor Shoup</p>
+                    <p>Free online textbook covering modern cryptographic techniques.</p>
+                    <a href="https://crypto.stanford.edu/~dabo/cryptobook/" target="_blank">View Resource →</a>
+                </li>
+            </ul>
+        </details>
+
+        <details class="collapsible-section">
+            <summary class="section-title">🎲&nbsp;&nbsp;Quantum Computing</summary>
+            <ul class="resource-list">
+                <li class="resource-item">
+                    <h3>Quantum Computation and Quantum Information</h3>
+                    <p><strong>Authors:</strong> Michael Nielsen & Isaac Chuang</p>
+                    <p>The standard textbook for quantum computing and information theory.</p>
+                </li>
+                <li class="resource-item">
+                    <h3>Quantum Computing Since Democritus</h3>
+                    <p><strong>Author:</strong> Scott Aaronson</p>
+                    <p>Accessible introduction to quantum computing with philosophical perspectives.</p>
+                </li>
+            </ul>
+        </details>
+
+        <details class="collapsible-section">
+            <summary class="section-title">🎮&nbsp;&nbsp;Game Theory & Mechanism Design</summary>
+            <ul class="resource-list">
+                <li class="resource-item">
+                    <h3>Algorithmic Game Theory</h3>
+                    <p><strong>Editors:</strong> Nisan, Roughgarden, Tardos, Vazirani</p>
+                    <p>Comprehensive coverage of computational aspects of game theory.</p>
+                    <a href="https://www.cambridge.org/core/books/algorithmic-game-theory/0092C07CA8B724E1B1BE2238DDD66B38#fndtn-information" target="_blank">View Resource →</a>
+                </li>
+            </ul>
+        </details>
+
+        <details class="collapsible-section">
+            <summary class="section-title">💻&nbsp;&nbsp;Online Resources & Courses</summary>
+            <ul class="resource-list">
+                <li class="resource-item">
+                    <h3>Theory of Computation - MIT OpenCourseWare</h3>
+                    <p>Complete course materials including lectures, assignments, and exams.</p>
+                    <a href="https://ocw.mit.edu/courses/mathematics/18-404j-theory-of-computation-fall-2020/" target="_blank">View Resource →</a>
+                </li>
+                <li class="resource-item">
+                    <h3>Great Ideas in Theoretical Computer Science - MIT</h3>
+                    <p>Overview of major results and open problems in TCS.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLm3J0oaFux3aafQm568blS9blxtA_EWQv" target="_blank">View Resource →</a>
+                </li>
+                <li class="resource-item">
+                    <h3>Complexity Theory Toolkit</h3>
+                    <p><strong>Author:</strong> Ryan O'Donnell</p>
+                    <p>Advanced topics in computational complexity.</p>
+                </li>
+            </ul>
+        </details>
+
+        <details class="collapsible-section">
+            <summary class="section-title">📝&nbsp;&nbsp;Research Resources</summary>
+            <ul class="resource-list">
+                <li class="resource-item">
+                    <h3>Electronic Colloquium on Computational Complexity (ECCC)</h3>
+                    <p>Preprint archive for research papers in computational complexity.</p>
+                    <a href="https://eccc.weizmann.ac.il/" target="_blank">View Resource →</a>
+                </li>
+                <li class="resource-item">
+                    <h3>Theory of Computing Blog Aggregator</h3>
+                    <p>Curated blog posts about theoretical computer science.</p>
+                    <a href="https://theory.report/" target="_blank">View Resource →</a>
+                </li>
+                <li class="resource-item">
+                    <h3>Complexity Zoo</h3>
+                    <p>Comprehensive catalog of complexity classes and their relationships.</p>
+                    <a href="https://complexityzoo.net/" target="_blank">View Resource →</a>
+                </li>
+            </ul>
+        </details>
     </main>
 
     <div id="footer-content"></div>
