@@ -7,5 +7,32 @@
         "deadline": null,
         "dateAdded": "2025-11-18",
         "url": "https://www.slmath.org/summer-schools/1126"
+    },
+    {
+        "name": "The Cornell, Maryland, Max Planck Pre-doctoral Research School in Computer Science (CMMRS 2026)",
+        "place": "Saarbrücken, Germany",
+        "startDate": "2026-08-03",
+        "endDate": "2026-08-07",
+        "deadline": "2026-02-14",
+        "dateAdded": "2026-01-09",
+        "url": "https://cmmrs.mpi-sws.org/"
+    },
+    {
+        "name": "Satisfiability (SAT), Satisfiability Modulo Theories (SMT), and Automated Reasoning (AR) Summer School",
+        "place": "Lisbon, Portugal",
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "deadline": null,
+        "dateAdded": "2026-01-09",
+        "url": "https://sat-smt-ar-school.gitlab.io/www/2026/"
+    },
+    {
+        "name": "Gene Golub SIAM Summer School: Fault-Tolerant Algorithms in Quantum Computing",
+        "place": "Durham, North Carolina",
+        "startDate": "2026-07-27",
+        "endDate": "2026-08-07",
+        "deadline": "2026-03-01",
+        "dateAdded": "2026-01-09",
+        "url": "https://www.siam.org/programs-initiatives/programs/gene-golub-siam-summer-school/"
     }
 ]
